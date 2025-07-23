@@ -1,0 +1,8 @@
+CREATE TABLE citas (
+  id SERIAL PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL,
+  servicio VARCHAR(100) NOT NULL,
+  fecha DATE NOT NULL,
+  hora TIME NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
